@@ -1,0 +1,15 @@
+{
+    "require": {
+        "lcobucci/jwt": "~3.0",
+        "twig/twig": "^3.2",
+        "aspose-cloud/aspose-words-cloud": "~21.2"
+    },
+    "conflict": {
+        "symfony/polyfill-php70": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsposeWordsExporter\\": "src/AsposeWordsExporter/"
+        }
+    }
+}

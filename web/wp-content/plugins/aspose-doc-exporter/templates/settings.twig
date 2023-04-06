@@ -1,0 +1,254 @@
+<div class="wrap">
+    <h2>
+        {{ plugin_data.Name }} Settings
+    </h2>
+    <br class="clear" />
+
+    <div class="metabox-holder has-right-sidebar" id="poststuff">
+        <div class="inner-sidebar" id="side-info-column">
+            <div class="meta-box-sortables ui-sortable" id="side-sortables">
+
+                <div class="postbox">
+                    <h3 class="hndle">Help and Support</h3>
+                    <div class="inside">
+                        For any suggestion, query, issue and requirement
+                        please feel free to post on
+                        <a href="https://forum.aspose.cloud/c/words">
+                            Aspose.Words Support Forum
+                        </a>.
+                    </div>
+                </div>
+
+                <div class="postbox">
+                    <h3 class="hndle">App SID</h3>
+                    <div class="inside">
+                        While talking to our support staff,
+                        you may be asked for your App SID.
+                        Use the following code.
+                        <br/>
+                        <code style="font-size: xx-small">
+                            {{ options["aspose-cloud-app-sid"] }}
+                        </code>
+                    </div>
+                </div>
+
+                <div class="postbox">
+                    <h3 class="hndle">Feedback and Review</h3>
+                    <div class="inside">
+                        Please feel free to add your reviews on
+                        <a href="https://wordpress.org/support/plugin/aspose-doc-exporter/reviews/" target="_blank">
+                            WordPress Plugin Directory
+                        </a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="post-body">
+            <div id="post-body-content">
+
+                <div class="postbox">
+                    <h3 class="hndle">aspose.cloud Subscription</h3>
+                    <div class="inside">
+                        Your FREE and Unlimited Access is enabled.
+                        You can use
+                        {{ plugin_data.Name }}
+                        to export posts and pages.
+                    </div>
+                </div>
+
+                <div class="postbox">
+                    <h3 class="hndle">Settings</h3>
+
+                    <div class="inside">
+                        <form method="post" action="options.php">
+                            {{ settings_fields | raw}}
+                            <table class="form-table">
+                                <tr>
+                                    <th scope="row">Show Post Date</th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_post_date"
+                                                   id="aspose_doc_exporter_post_date"
+                                                   {{ options.aspose_doc_exporter_post_date ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to show post date
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Show Post Author
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_post_author"
+                                                   id="aspose_doc_exporter_post_author"
+                                                   {{ options.aspose_doc_exporter_post_author ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to show author of the post
+                                        </label>>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Show Post Categories
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_post_categories"
+                                                   id="aspose_doc_exporter_post_categories"
+                                                   {{ options.aspose_doc_exporter_post_categories ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to show categories of the post
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Show post excerpt
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_excerpt"
+                                                   id="aspose_doc_exporter_excerpt"
+                                                   {{ options.aspose_doc_exporter_excerpt ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to export post excerpt
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Show post content
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_content"
+                                                   id="aspose_doc_exporter_content"
+                                                   {{ options.aspose_doc_exporter_content ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to export post content
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Enable shortcodes
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_do_shortcode"
+                                                   id="aspose_doc_exporter_do_shortcode"
+                                                   {{ options.aspose_doc_exporter_do_shortcode ? 'checked="checked"' }}
+                                                   value="1">
+                                            Pre-process shortcodes before exporting post
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Export Post Comments
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_post_comments"
+                                                   id="aspose_doc_exporter_post_comments"
+                                                   {{ options.aspose_doc_exporter_post_comments ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to export post comments as well
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Label for Comments
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="text"
+                                                   size="40"
+                                                   name="aspose_doc_exporter_comments_text"
+                                                   id="aspose_doc_exporter_comments_text"
+                                                   value="{{ options.aspose_doc_exporter_comments_text }}">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Show custom fields (metadata)
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_metadata"
+                                                   id="aspose_doc_exporter_metadata"
+                                                   {{ options.aspose_doc_exporter_metadata ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to export all fields
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Export Posts File Type
+                                    </th>
+
+                                    <td>
+                                        <label>
+                                            <select name="aspose_doc_exporter_file_type" id="aspose_doc_exporter_file_type">
+                                                <option value="docx" {{ options.aspose_doc_exporter_file_type == "docx" ? 'selected="selected"' }}>DOCX</option>
+                                                <option value="doc" {{ options.aspose_doc_exporter_file_type == "doc" ? 'selected="selected"' }}>DOC</option>
+                                                <option value="odt" {{ options.aspose_doc_exporter_file_type == "odt" ? 'selected="selected"' }}>ODT</option>
+                                                <option value="dot" {{ options.aspose_doc_exporter_file_type == "dot" ? 'selected="selected"' }}>DOT</option>
+                                                <option value="dotx" {{ options.aspose_doc_exporter_file_type == "dotx" ? 'selected="selected"' }}>DOTX</option>
+                                                <option value="rtf" {{ options.aspose_doc_exporter_file_type == "rtf" ? 'selected="selected"' }}>RTF</option>
+                                                <option value="txt" {{ options.aspose_doc_exporter_file_type == "txt" ? 'selected="selected"' }}>TXT</option>
+                                            </select>
+                                            Select Exported File Format
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Export each post individually
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="checkbox"
+                                                   name="aspose_doc_exporter_archive_posts"
+                                                   id="aspose_doc_exporter_archive_posts"
+                                                   {{ options.aspose_doc_exporter_archive_posts ? 'checked="checked"' }}
+                                                   value="1">
+                                            Enable if you want to export post individually and get a ZIP format for all posts documents
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="submit">
+                                <input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
