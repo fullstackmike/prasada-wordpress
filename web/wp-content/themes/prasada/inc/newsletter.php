@@ -1,3 +1,9 @@
+<?php
+
+$dude = "test";
+
+?>
+
 <div class="sb_block">
 
 	<div id="newsletter">

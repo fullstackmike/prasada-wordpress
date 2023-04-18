@@ -47,7 +47,7 @@ if (!current_user_can('manage_options')) {
 
 add_filter( 'body_class','my_body_classes' );
 function my_body_classes( $classes ) {
-$classes[] = 'et_bloom';
+//$classes[] = 'et_bloom';
 return $classes;
 }
 

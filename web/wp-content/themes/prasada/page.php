@@ -32,7 +32,7 @@ $postid = get_the_ID();
 			<?php if (is_page(32)) { include('inc/research.php');  } ?>
 			
 			<!-- TEAM PAGE -->
-			<?php if (is_page(34)) { include('inc/team.php');  } ?>
+			<?php if (is_page(30)) { include('inc/team.php');  } ?>
 	
 		</div><!-- end #main -->
 		

@@ -8,7 +8,7 @@ Template Name: Home
 $nav_on = 'home';
 get_header(); 
 ?>
-
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Pacifico"/>
 <!-- SLIDER -->
 <section class="thunder-top-slider row">
 
@@ -35,7 +35,7 @@ get_header();
 						<h1><?php the_title(); ?></h1>
 						<p><?php echo $slide_content; ?></p>
 						
-						<a class="slide_more" href="<?php echo $slide_link; ?>"><?php echo $link_text; ?></a>
+						<!--<a class="slide_more" href="<?php echo $slide_link; ?>"><?php echo $link_text; ?></a>-->
 	
 					</div> <!-- end text-wrap -->				
 	
@@ -51,60 +51,64 @@ get_header();
 
 </section>
 <!-- END SLIDER -->
-			
+
+
+<section class="section-what-we-do">
+<!--	<h3>What We Do</h3>-->
+	<p>At Prasada, we design training programs to help organizations build a culture of wholebeing<br>—to connect and empower people, define and activate purpose, and deliver results that matter. </p>
+</section>
 
 <section id="services">
 
-	<div class="row">
+		<div class="row">
 
 		<div class="service">
-		
-			<div class="s_content">
-			
-				<span class="icon icon-Users"></span>
 
-				<h3>Programs</h3>
-				<p>Engage employees in healthier habits</p>
-				
-				<a href="/programs"></a>
-			
+			<div class="s_content">
+
+				<span class="icon"></span>
+
+				<h3>Workplace Wellness Programs</h3>
+				<p>&nbsp;</p>
+
+				<a href="/workplace-wellness-programs"></a>
+
 			</div><!--end .s_content-->
-		
+
 		</div><!--end .service-->
-		
+
 		<div class="service s_mid">
-		
-			<div class="s_content">
-			
-				<span class="icon icon-Pointer"></span>
-				<!--<span class="icon icon-House"></span>-->
 
-				<h3>Places</h3>
-				<p>Create more productive workspaces</p>
-				
+			<div class="s_content">
+
+				<span class="icon"></span>
+
+				<h3>Leadership + Professional Development Training</h3>
+				<p>&nbsp;</p>
+
 				<a href="/places"></a>
-			
-			</div><!--end .s_content-->
-		
-		</div><!--end .service-->
-		
-		<div class="service">
-		
-			<div class="s_content">
-			
-				<span class="icon icon-Layers"></span>
 
-				<h3>Policies</h3>
-				<p>Encourage smarter choices</p>
-				
-				<a href="/policies"></a>
-			
 			</div><!--end .s_content-->
-		
+
 		</div><!--end .service-->
-		
+
+		<div class="service">
+
+			<div class="s_content">
+
+				<span class="icon"></span>
+
+				<h3>Wholebeing for Individuals</h3>
+				<p>&nbsp;</p>
+
+				<a href="/journeys"></a>
+
+			</div><!--end .s_content-->
+
+		</div><!--end .service-->
+
 		<div class="clear"></div>
-	
+
 	</div> <!-- end row -->
 
 </section><!--end #services-->
