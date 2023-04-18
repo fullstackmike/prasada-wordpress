@@ -41,9 +41,9 @@
 	</div><!--end #programs-->
 	
 	<div class="side_cta" id="places">
-		<a href="/places"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/services-leadership.jpg" /></a>
+		<a href="/leadership-training"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/services-leadership.jpg" /></a>
 		<h4>Leadership + Professional Development Training</h4>
-		<a href="/places">Learn More</a>
+		<a href="/leadership-training">Learn More</a>
 	</div><!--end #places-->
 	
 	<div class="side_cta" id="journeys">

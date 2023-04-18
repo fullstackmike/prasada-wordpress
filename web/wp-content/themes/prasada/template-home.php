@@ -86,7 +86,7 @@ get_header();
 				<h3>Leadership + Professional Development Training</h3>
 				<p>&nbsp;</p>
 
-				<a href="/places"></a>
+				<a href="/leadership-training"></a>
 
 			</div><!--end .s_content-->
 
